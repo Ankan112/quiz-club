@@ -4,7 +4,7 @@ import './Header.css'
 const Header = () => {
     return (
         <div>
-            <h2>This is header</h2>
+            <h1> Prove YourSelf !!!</h1>
         </div>
     );
 };

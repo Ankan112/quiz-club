@@ -3,6 +3,7 @@ import './Navigation.css'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
 // import NavDropdown from 'react-bootstrap/NavDropdown';
 
 const Navigation = () => {
@@ -10,9 +11,9 @@ const Navigation = () => {
 
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
-                <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+                <Navbar.Brand href="#home">Quiz Club</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
+                <Navbar.Collapse className='nav' id="responsive-navbar-nav">
                     {/* <Nav className="me-auto">
                         <Nav.Link href="#features">Features</Nav.Link>
                         <Nav.Link href="#pricing">Pricing</Nav.Link>
@@ -28,11 +29,11 @@ const Navigation = () => {
                             </NavDropdown.Item>
                         </NavDropdown>
                     </Nav> */}
-                    <Nav className="me-auto">
-                        <Nav.Link href="#deets">More deets</Nav.Link>
-                        <Nav.Link eventKey={2} href="#memes">
-                            Dank memes
-                        </Nav.Link>
+                    <Nav className='navLink '>
+                        <Link to='/'>Home</Link>
+                        <Link to='/topics'>Topics</Link>
+                        <Link to='/statistics'>Statistics</Link>
+                        <Link to='/blog'>Blog</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

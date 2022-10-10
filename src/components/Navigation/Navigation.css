@@ -1,0 +1,20 @@
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.navLink a {
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+}
+
+@media screen and (min-width: 992px) {
+    .nav {
+        justify-content: end;
+    }
+}
+
+/* .navLink {
+    margin-left: 650px;
+} */
