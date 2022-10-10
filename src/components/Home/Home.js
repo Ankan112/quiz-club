@@ -6,11 +6,9 @@ import './Home.css'
 
 const Home = () => {
     const data = useLoaderData();
-    console.log(data)
     return (
         <div>
             <Header></Header>
-            <h2>This is quiz {data.data.length}</h2>
             <div className="quiz">
                 {
                     data.data.map(quiz => <Quiz

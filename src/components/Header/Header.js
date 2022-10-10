@@ -3,7 +3,7 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <div>
+        <div className='my-3'>
             <h1> Prove YourSelf !!!</h1>
         </div>
     );
