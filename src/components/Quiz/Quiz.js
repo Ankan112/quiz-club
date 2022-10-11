@@ -13,7 +13,7 @@ const Quiz = ({ quiz }) => {
             <Card.Body>
                 <Card.Title>{name}</Card.Title>
                 <p>Total Quiz {total}</p>
-                <Link to={`/quiz/${id}`}><Button className='btn' variant="primary">Go somewhere</Button></Link>
+                <Link to={`/quiz/${id}`}><Button className='btn' variant="primary">Start Quiz</Button></Link>
             </Card.Body>
         </Card>
     );

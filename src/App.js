@@ -24,11 +24,13 @@ function App() {
         },
         {
           path: '/topics',
-          element: <Topics></Topics>
+          element: <Topics></Topics>,
+          loader: async () => fetch(`https://openapi.programming-hero.com/api/quiz`)
         },
         {
           path: '/statistics',
-          element: <Statistics></Statistics>
+          element: <Statistics></Statistics>,
+          loader: async () => fetch(`https://openapi.programming-hero.com/api/quiz`)
         },
         {
           path: '/blog',
