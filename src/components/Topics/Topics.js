@@ -7,7 +7,7 @@ const Topics = () => {
     const data = useLoaderData();
     return (
         <div>
-            <h2>This is topics</h2>
+            <h2 className='mt-3'>Choose Your Topics</h2>
             <div className="quiz">
                 {
                     data.data.map(quiz => <Quiz
