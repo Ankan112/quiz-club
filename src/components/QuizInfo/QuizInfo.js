@@ -8,7 +8,7 @@ const QuizInfo = () => {
     console.log(data.data.questions)
     return (
         <div>
-            <h2>Quiz info {data.data.name}</h2>
+            <h2 className='mt-3'>Quiz of {data.data.name}</h2>
             <div>
                 {
                     data.data.questions.map(singleQuestion => <Question

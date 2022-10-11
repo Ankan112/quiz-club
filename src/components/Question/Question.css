@@ -1,6 +1,46 @@
 .question {
-    border: 2px solid skyblue;
+    /* border: 2px solid skyblue; */
     padding: 20px;
     margin: 20px;
     border-radius: 20px;
+}
+
+.question h4 {
+    width: 65%;
+    margin: 20px auto;
+}
+
+.option {
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.icon {
+    position: absolute;
+    top: 0px;
+    left: 75%;
+    width: 25px;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(97, 51, 139);
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: left;
+    width: 45%;
+    background-color: rgba(80, 77, 77, 0.637);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.options:hover {
+    background-color: rgba(0, 0, 0, 0.692);
+}
+
+.input {
+    margin-right: 10px;
 }
