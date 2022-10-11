@@ -17,7 +17,7 @@ const DangerToast = () => {
                 >
 
                     <Toast.Body style={{ color: 'white' }} className={variant === 'Dark' && 'text-white'}>
-                        Hello, world! This is a toast message.
+                        Your Answer is Wrong.
                     </Toast.Body>
                 </Toast>
             ))}

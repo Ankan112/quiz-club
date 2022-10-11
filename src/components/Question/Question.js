@@ -1,12 +1,7 @@
 import React, { useState } from 'react';
 import Toast from '../Toast/Toast';
 import './Question.css'
-// import ReactTooltip from "react-tooltip";
-// import Toast from 'react-bootstrap/Toast';
-
 import "bootstrap/dist/css/bootstrap.css";
-
-// import Button from "react-bootstrap/Button";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 import DangerToast from '../DangerToast/DangerToast';
@@ -17,10 +12,7 @@ const Question = ({ singleQuestion }) => {
     const [value, setValue] = useState('')
     const handleInput = (e) => {
         const getValue = (e.target.value);
-        setValue(getValue)
-        // if (value === correctAnswer) {
-        //     alert('your right')
-        // }
+        setValue(getValue);
     }
     const renderTooltip = props => (
         <Tooltip {...props}>{correctAnswer}</Tooltip>
@@ -40,16 +32,24 @@ const Question = ({ singleQuestion }) => {
                     </div>)
                 }
                 <OverlayTrigger placement="top" overlay={renderTooltip}>
-                    {/* <Button>Register</Button> */}
                     <img className="icon" src="https://img.icons8.com/external-others-inmotus-design/40/000000/external-View-basic-functions-others-inmotus-design.png" alt='' />
                 </OverlayTrigger>
+                {
+                    value === correctAnswer ?
+                        <Toast></Toast>
+                        :
+                        // <DangerToast></DangerToast>
+                        ''
+
+                }
+                {
+                    value !== '' && value !== correctAnswer ?
+                        <DangerToast></DangerToast>
+                        :
+                        ''
+                }
+
             </div>
-            {
-                value === correctAnswer ?
-                    <Toast></Toast>
-                    :
-                    <DangerToast></DangerToast>
-            }
 
         </div>
     );
